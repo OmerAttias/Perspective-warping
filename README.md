@@ -26,20 +26,21 @@
 
 
 
-> Each of all the detected keypoints need to be a unique fingerprint. The algorithm must find the feature again in a different image. This might have a different perspective, lightning situation, etc. Even under these circumstances, a match has to be possible. see https://www.andreasjakl.com/basics-of-ar-anchors-keypoints-feature-detection/
+> Each of all the detected keypoints need to be a unique fingerprint. The algorithm must find the feature again in a different image. This might have a different perspective, lightning situation, etc. Even under these circumstances, a match has to be possible. For more inforamtion, see https://www.andreasjakl.com/basics-of-ar-anchors-keypoints-feature-detection/
 
-- the cuted single frame will be compared to the original non video image. every key point from one image passing throgh the other image keypoints and the colser one are cosidere a match.
+- The cuted single frame will be compared to the original non video image. every key point from one image Passes through the other image keypoints and the closer one are considerd a match.
 
     <img src="https://user-images.githubusercontent.com/101269937/190629042-eb7fce77-e76f-42d6-b796-88720fb61da1.jpg" width="400" height="200">
 
 
-- after finding the mached keypoints, i created the homography matrix which is a magic matrix suppose to take into account Perspective-warping of the tamplates image. 
+- After finding the mached keypoints, i created the homography matrix which is a "magic" matrix suppose to take into account Perspective-warping of the target image. 
 
 <img src="https://user-images.githubusercontent.com/101269937/190629105-991db5a6-d959-4182-bbbb-e1fa7483d399.jpg" width="350" height="100">
 
 
-- ones we have the homography matrix we can implement the target image on top of the tamplaete one and creating a new video.
-- at this point, the only image that projected on the new video is the image itself. the backround didnt pass to the new video and it need to manually implement on the new video.
+- Ones we have the homography matrix we can implement the template image on top of the target one and creating a new video.
+
+- At this point, the only image that projected on the new video is the image itself. The background didn't pass to the new video and it needs a manually implementation on the new video.
 
 <img src="https://user-images.githubusercontent.com/101269937/190629262-4508e234-4e98-46d4-b39d-a2be9d8022ad.jpg" width="350" height="200">
       
