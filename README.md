@@ -1,6 +1,19 @@
-# Perspective-warping
+# "Perspective-warping"
+
+## Description
 
 **Plant an image within a video on top of existing image while adjusting the dynamic perspective of the original image in the video.**
+
+## Installation packages
+
+```python
+
+import cv2
+import numpy as np
+
+```
+
+## Quick review
 
 - The main goal for this project is to get to know the augmented reality world.
 
