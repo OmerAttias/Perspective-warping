@@ -35,7 +35,7 @@ Plant an image within a video on top of existing image while adjusting the dynam
 
 -after finding the mached keypoints, i created the homography matrix which is a magic matrix suppose to take into account Perspective-warping of the tamplates image. 
 
-   <img src="https://user-images.githubusercontent.com/101269937/190629105-991db5a6-d959-4182-bbbb-e1fa7483d399.jpg" width="200" height="100">
+   <img src="https://user-images.githubusercontent.com/101269937/190629105-991db5a6-d959-4182-bbbb-e1fa7483d399.jpg" width="350" height="100">
 
 
 - ones we have the homography matrix we can implement the target image on top of the tamplaete one and creating a new video.
