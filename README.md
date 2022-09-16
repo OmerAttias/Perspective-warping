@@ -13,7 +13,7 @@ import numpy as np
 
 ```
 
-## Quick review
+## Quick review :man_cartwheeling:	
 
 - The main goal for this project is to get to know the augmented reality world.
 
