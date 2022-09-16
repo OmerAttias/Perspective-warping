@@ -1,12 +1,12 @@
 # Perspective-warping
 
-Plant an image within a video on top of existing image while adjusting the dynamic perspective of the original image in the video.
+**Plant an image within a video on top of existing image while adjusting the dynamic perspective of the original image in the video.**
 
 - The main goal for this project is to get to know the augmented reality world.
 
 -  The mission was to take a random image and implement it on a video which contain another image. The new implemented image should "behave" in identical dynamic perspective ratio to the original one for the entier video.
 
-- For the explanation let's call the original image "template image" and for the new image "target image".
+- For the explanation let's call the original image "target image" and for the new image "Template image".
 
   - Target image:
   
@@ -17,7 +17,7 @@ Plant an image within a video on top of existing image while adjusting the dynam
     <img src="https://user-images.githubusercontent.com/101269937/190627203-ca49c9f2-938f-44c7-a6fe-edc4d18e231f.jpeg" width="150" height="200">
 
 
-- First i took a single frame from the video in order to analyze the template image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same image but non video one and analyzed it in the same way as the cutted one (i didnt use the target image photo yet but only the cutted image from the video and another image that is identical but not from the video itslef).
+- First i took a single frame from the video in order to analyze the target image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same image but non video one and analyzed it in the same way as the cutted one (i didnt use the template image photo yet but only the cutted image from the video and another image that is identical but not from the video itslef).
 
    <img src="https://user-images.githubusercontent.com/101269937/190628720-235e647a-88b4-46b3-94d1-9a67d727a36b.jpg" width="220" height="250">
      
@@ -26,7 +26,8 @@ Plant an image within a video on top of existing image while adjusting the dynam
 
 
 
-- Each of all the detected keypoints need to be a unique fingerprint. The algorithm must find the feature again in a different image. This might have a different perspective, lightning situation, etc. Even under these circumstances, a match has to be possible.
+> Each of all the detected keypoints need to be a unique fingerprint. The algorithm must find the feature again in a different image. This might have a different perspective, lightning situation, etc. Even under these circumstances, a match has to be possible. see https://www.andreasjakl.com/basics-of-ar-anchors-keypoints-feature-detection/
+
 - the cuted single frame will be compared to the original non video image. every key point from one image passing throgh the other image keypoints and the colser one are cosidere a match.
 
     <img src="https://user-images.githubusercontent.com/101269937/190629042-eb7fce77-e76f-42d6-b796-88720fb61da1.jpg" width="400" height="200">
