@@ -51,7 +51,7 @@ import numpy as np
 - The cutted single frame will be compared to the original non video image. every key point from one image Passes through the other image keypoints and the closest one are considerd a match.
 
     <p align="center">
-    <img src="https://user-images.githubusercontent.com/101269937/190629042-eb7fce77-e76f-42d6-b796-88720fb61da1.jpg" width="400" height="200">
+    <img src="https://user-images.githubusercontent.com/101269937/190629042-eb7fce77-e76f-42d6-b796-88720fb61da1.jpg" width="500" height="300">
     </p>
 
 
