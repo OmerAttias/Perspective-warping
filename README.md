@@ -65,7 +65,7 @@ import numpy as np
 
 - At this point, the only image that projected on the new video is the image itself. The background didn't pass to the new video and it needs a manually implementation on the new video.
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/101269937/190629262-4508e234-4e98-46d4-b39d-a2be9d8022ad.jpg" width="350" height="200">
+  <img src="https://user-images.githubusercontent.com/101269937/190629262-4508e234-4e98-46d4-b39d-a2be9d8022ad.jpg" width="400" height="250">
   </p>
 
       
