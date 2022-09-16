@@ -19,23 +19,23 @@ Plant an image within a video on top of existing image while adjusting the dynam
 
 - First i took a single frame from the video in order to analyze the template image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same image but non video one and analyzed it in the same way as the cutted one (i didnt use the target image photo yet but only the cutted image from the video and another image that is identical but not from the video itslef).
 
-<img src="https://user-images.githubusercontent.com/101269937/190628720-235e647a-88b4-46b3-94d1-9a67d727a36b.jpg" width="150" height="200">
+<img src="https://user-images.githubusercontent.com/101269937/190628720-235e647a-88b4-46b3-94d1-9a67d727a36b.jpg" width="200" height="250">
      
      
      
- <img src="https://user-images.githubusercontent.com/101269937/190628763-1c6c64ec-c609-4bd6-8aa7-f292db356cd8.jpg" width="150" height="200">
+ <img src="https://user-images.githubusercontent.com/101269937/190628763-1c6c64ec-c609-4bd6-8aa7-f292db356cd8.jpg" width="200" height="250">
 
 
 
 - Each of all the detected keypoints need to be a unique fingerprint. The algorithm must find the feature again in a different image. This might have a different perspective, lightning situation, etc. Even under these circumstances, a match has to be possible.
 - the cuted single frame will be compared to the original non video image. every key point from one image passing throgh the other image keypoints and the colser one are cosidere a match.
 
-  <img src="https://user-images.githubusercontent.com/101269937/190629042-eb7fce77-e76f-42d6-b796-88720fb61da1.jpg" width="150" height="200">
+  <img src="https://user-images.githubusercontent.com/101269937/190629042-eb7fce77-e76f-42d6-b796-88720fb61da1.jpg" width="400" height="200">
 
 
 -after finding the mached keypoints, i created the homography matrix which is a magic matrix suppose to take into account Perspective-warping of the tamplates image. 
 
-   <img src="https://user-images.githubusercontent.com/101269937/190629105-991db5a6-d959-4182-bbbb-e1fa7483d399.jpg" width="150" height="200">
+   <img src="https://user-images.githubusercontent.com/101269937/190629105-991db5a6-d959-4182-bbbb-e1fa7483d399.jpg" width="400" height="200">
 
 
 - ones we have the homography matrix we can implement the target image on top of the tamplaete one and creating a new video.
