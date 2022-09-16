@@ -19,11 +19,11 @@ Plant an image within a video on top of existing image while adjusting the dynam
 
 - First i took a single frame from the video in order to analyze the template image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same image but non video one and analyzed it in the same way as the cutted one (i didnt use the target image photo yet but only the cutted image from the video and another image that is identical but not from the video itslef).
 
-<img src="https://user-images.githubusercontent.com/101269937/190628720-235e647a-88b4-46b3-94d1-9a67d727a36b.jpg" width="200" height="250">
+<img src="https://user-images.githubusercontent.com/101269937/190628720-235e647a-88b4-46b3-94d1-9a67d727a36b.jpg" width="250" height="250">
      
      
      
- <img src="https://user-images.githubusercontent.com/101269937/190628763-1c6c64ec-c609-4bd6-8aa7-f292db356cd8.jpg" width="200" height="250">
+ <img src="https://user-images.githubusercontent.com/101269937/190628763-1c6c64ec-c609-4bd6-8aa7-f292db356cd8.jpg" width="250" height="250">
 
 
 
@@ -42,7 +42,7 @@ Plant an image within a video on top of existing image while adjusting the dynam
 - at this point, the only image that projected on the new video is the image itself. the backround didnt pass to the new video and it need to manually implement on the new video.
 - 
 
-   <img src="https://user-images.githubusercontent.com/101269937/190629262-4508e234-4e98-46d4-b39d-a2be9d8022ad.jpg" width="400" height="200">
+   <img src="https://user-images.githubusercontent.com/101269937/190629262-4508e234-4e98-46d4-b39d-a2be9d8022ad.jpg" width="350" height="200">
       
       
 ## Final video result:
