@@ -8,10 +8,10 @@ Plant an image within a video on top of existing image while adjusting the dynam
 
 - For the explanation let's call the original image "template image" and for the new image "target image".
 
-  -Target image:
+  - Target image:
 <img src="https://user-images.githubusercontent.com/101269937/190626910-54b78195-f7c1-4209-8900-88848a1a0be0.jpg" width="150" height="200">
 
-  -Template image:
+  - Template image:
 
 <img src="https://user-images.githubusercontent.com/101269937/190627203-ca49c9f2-938f-44c7-a6fe-edc4d18e231f.jpeg" width="150" height="200">
 
