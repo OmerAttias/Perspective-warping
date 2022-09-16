@@ -15,11 +15,11 @@ import numpy as np
 
 ## Quick review :man_cartwheeling:	
 
-- The main goal for this project is to get to know the augmented reality world.
+- The main goal for this project is to have an Initial introduction with the basics of the augmented reality world.
 
 -  The mission was to take a random image and implement it on a video which contain another image. The new implemented image should "behave" in identical dynamic perspective ratio to the original one for the entier video.
 
-- For the explanation let's call the original image "target image" and for the new image "Template image".
+- For the explanation let's call the original image "target image" and to the implemented desire image "Template image".
 
   - Target image:
   
@@ -30,7 +30,7 @@ import numpy as np
     <img src="https://user-images.githubusercontent.com/101269937/190627203-ca49c9f2-938f-44c7-a6fe-edc4d18e231f.jpeg" width="150" height="200">
 
 
-- First i took a single frame from the video in order to analyze the target image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same image but non video one and analyzed it in the same way as the cutted one (i didnt use the template image photo yet but only the cutted image from the video and another image that is identical but not from the video itslef).
+- First i took a single frame from the video in order to analyze the target image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same visually image but not from the video and analyzed it in the same way as the cutted one (i didnt use the template image photo yet).
 
    <img src="https://user-images.githubusercontent.com/101269937/190628720-235e647a-88b4-46b3-94d1-9a67d727a36b.jpg" width="220" height="250">
      
@@ -41,12 +41,12 @@ import numpy as np
 
 > Each of all the detected keypoints need to be a unique fingerprint. The algorithm must find the feature again in a different image. This might have a different perspective, lightning situation, etc. Even under these circumstances, a match has to be possible. For more inforamtion, see https://www.andreasjakl.com/basics-of-ar-anchors-keypoints-feature-detection/
 
-- The cuted single frame will be compared to the original non video image. every key point from one image Passes through the other image keypoints and the closer one are considerd a match.
+- The cutted single frame will be compared to the original non video image. every key point from one image Passes through the other image keypoints and the closest one are considerd a match.
 
     <img src="https://user-images.githubusercontent.com/101269937/190629042-eb7fce77-e76f-42d6-b796-88720fb61da1.jpg" width="400" height="200">
 
 
-- After finding the mached keypoints, i created the homography matrix which is a "magic" matrix suppose to take into account Perspective-warping of the target image. 
+- After finding the matched keypoints, i created the homography matrix which is a "magic" matrix which suppose to take into account Perspective-warping of the target image. 
 
   <img src="https://user-images.githubusercontent.com/101269937/190629105-991db5a6-d959-4182-bbbb-e1fa7483d399.jpg" width="350" height="100">
 
