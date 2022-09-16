@@ -34,7 +34,7 @@ import numpy as np
     </p>
 
 
-- First i took a single frame from the video in order to analyze the target image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same visually image but not from the video and analyzed it in the same way as the cutted one (i didnt use the template image photo yet).
+- First, i took a single frame from the video in order to analyze the target image. i change the image color model from RGB to gray scale and search for "Key points". at the same time i took the same visually image but not from the video and analyzed it in the same way as the cutted one (i didnt use the template image photo yet).
 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/101269937/190628720-235e647a-88b4-46b3-94d1-9a67d727a36b.jpg" width="220" height="250">
